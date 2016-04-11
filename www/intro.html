@@ -2,12 +2,9 @@
     
 function validarentradas(){
 
-    navigator.notification.alert(
-        'vamos bien',
-        alertDismissed,
-        'alerta',
-        'Done'
-    );
+    if(document.getElementById("email").value == ""){
+        alert("No se puede dejar espacios vacios");
+    }
     
 }
 
