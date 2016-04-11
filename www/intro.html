@@ -2,9 +2,12 @@
     
 function validarentradas(){
 
-    //if((document.getElementById("email").lenght == 0){
-        alert("Error espacio vacio");
-    //}
+    navigator.notification.alert(
+        'vamos bien',
+        alertDismissed,
+        'alerta',
+        'Done'
+    );
     
 }
 
@@ -47,7 +50,6 @@ function validarentradas(){
                     </ul>
                 </div>
             </form>					
-					<!--href="friends-list.html"-->
                     <a href="javascript:validarentradas()" class="button-intro button-round intro login" > <span class="intro">Ingresar</span></a>
 
                 </div>
