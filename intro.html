@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<body>
+
+<?php
+
+function cabeceraPagina(){
+
+    $couch_dsn = "http://52.38.227.57:5984";
+    $couch_db = "usuarios";
+
+    require_once './lib/couch.php';
+    require_once './lib/couchClient.php';
+    require_once './lib/couchDocument.php';
+
+    $client = new couchClient($couch_dsn,$couch_db);
+
+    echo "Usted esta siendo redireccionado a la pagina principal";
+
+}
+
+?>
+
+    <div class="views">
+        <div class="view view-main">
+            <div class="pages">
+                <div data-page="intro" class="page no-navbar">
+                    <div class="page-content">
+
+                        <div class="image-background">
+                            <img src="img/news1.jpg">
+                        </div>
+
+                        <p class="title">G9 Messenger</p>
+
+                <form>
+                    <div class="list-block">
+
+                        <p class="tour-content">Ingreso de Usuarios</p>
+
+                        <ul class="login">
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label login">Usuario</div>
+                                    <div class="item-input">
+                                        <input type="email" name="email">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label login">Contraseña</div>
+                                    <div class="item-input">
+                                        <input type="password" name="password">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>	
+
+                        <button type:"button" href="friends-list.html" class="button-intro button-round intro login" onclick="coneccouch.php"> <span class="intro">Ingresar</span></button>  
+
+                        <a href="index.html" class="button-intro button-round intro login2"><span class="intro2">Atras</span></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    
+function validarentradas(){
+
+    if(document.getElementById("email").value == ""){
+        alert("No se puede dejar espacios vacios");
+    }
+    
+}
+
+</script>
