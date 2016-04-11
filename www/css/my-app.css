@@ -652,6 +652,11 @@ span.intro {
   top: 5px;
 }
 
+span.intro2{
+  position: relative;
+  top: 5px;
+}
+
 a.button-intro.button-round.intro {
   width: 50%;
   text-transform: uppercase;
@@ -690,6 +695,38 @@ a.button-intro.button-round.intro.login {
   font-size: 14px;
   height: 40px;
   bottom: 130px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+  line-height: 27px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: 0 0;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 27px;
+}
+
+a.button-intro.button-round.intro.login2 {
+  width: 50%;
+  text-transform: uppercase;
+  font-size: 14px;
+  height: 40px;
+  bottom: 180px;
   position: absolute;
   left: 0;
   right: 0;
